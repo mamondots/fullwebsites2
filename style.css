@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.homePage{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#feca8215;
+    overflow: hidden;
+}
+header{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:40px 50px;
+}
+.menu ul{
+    position: relative;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    color:#565656;
+    text-transform: capitalize;
+    margin:0 16px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.menu ul li a:hover{
+    color:#605dba;
+}
+.menu ul li a i{
+    font-size:14px;
+}
+.menuBtn{
+    position: relative;
+}
+.menuBtn a{
+    text-decoration:none;
+    font-size:18px;
+    color:#fff;
+    font-weight:600;
+    text-transform: capitalize;
+    padding:13px 20px;
+    background-color:#605dba;
+    border:2px solid #605dba;
+    border-radius:8px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.menuBtn a:hover{
+    background-color:transparent;
+    color:#605dba;
+}
+.homeContent{
+    position: relative;
+    display:flex;
+    top:6vh;
+    padding:0 110px;
+}
+.homeInfo h1{
+    font-size:3.2rem;
+    font-weight:700;
+    line-height:1.3;
+    color:#3a3a3a;
+    text-transform: capitalize;
+}
+.homeInfo h1 span{
+    color:#605dba;
+}
+.homeInfo p{
+    font-size:23px;
+    font-weight:500;
+    line-height:1.5;
+    padding:10px 0;
+    color:#6f6f6f;
+}
+.homeBtn{
+    position: relative;
+    top:28px;
+    left:-8px;
+}
+.homeBtn button{
+    font-size:16px;
+    color:#fff;
+    font-weight:600;
+    text-transform: capitalize;
+    padding:18px 35px;
+    background-color:#605dba;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    margin:0 8px;
+    transition:0.5s;
+    transform:translateY(0px);
+}
+.homeBtn button:hover{
+    transform:translateY(-8px);
+}
+.homeBtn .btn02{
+    background-color:transparent;
+    border:2px solid #605dba;
+    color:#605dba;
+    transition:0.5s;
+}
+.homeBtn .btn02:hover{
+    background-color: #605dba;
+    color:#fff;
+}
+.homeImg{
+    position: absolute;
+    right:-27vh;
+    top:0vh;
+}
+.homeImg img{
+    width:55%;
+}
+.servicePage{
+    position: relative;
+    width:100%;
+    height:115vh;
+    background-color:#feca8215;
+}
+.serviceTitle{
+    position: relative;
+    text-align:center;
+    padding-top:80px;
+}
+.serviceTitle p{
+    font-size:18px;
+    padding:20px 0;
+    color:#605dba;
+    font-weight:600;
+}
+.serviceTitle h1{
+    font-size:2.5rem;
+    font-weight:600;
+    line-height:1.5;
+    color:#343f52;
+}
+.servicesBoxes{
+    position: relative;
+    top:8vh;
+    padding:0 120px;
+    display:flex;
+}
+.servicesBoxes .serviceBox{
+    position: relative;
+    width:270px;
+    height:360px;
+    text-align:center;
+    border:1px solid rgba(217,217,217,0);
+    padding:40px 0;
+    margin:0 12px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.servicesBoxes .serviceBox:hover{
+    border:1px solid rgb(217,217,217);
+}
+.serviceBox i{
+    font-size:35px;
+    color:#605dba;
+}
+.serviceBox h1{
+    font-size:20px;
+    font-weight:500;
+    padding:16px 0;
+}
+.serviceBox p{
+    font-size:16px;
+    line-height:1.8;
+    color:#575757;
+}
+.serviceBox a{
+    position: relative;
+    top:12px;
+    font-size:16px;
+    font-weight:600;
+    color:#605dba;
+    text-decoration:none;
+    cursor: pointer;
+}
+.serviceBox a i{
+    position: relative;
+    left:5px;
+    font-size:14px;
+}
+.serviceBox a::before{
+    position: absolute;
+    content:"";
+    height:1px;
+    width:0%;
+    left:0;
+    bottom:-5px;
+    background-color:#605dba;
+    transition:0.5s;
+}
+.serviceBox a:hover::before{
+    width:100%;
+}
+.benifitPage{
+    position: relative;
+    width:100%;
+    height:110vh;
+    background-color:#feca8215;
+}
+.benifitContent{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    top:8vh;
+}
+.benifitImg{
+    position: relative;
+    top:25px;
+    padding:0 120px;
+}
+.benifitImg img{
+    width:70%;
+}
+.benifitDetils{
+    position: absolute;
+    right:8vh;
+}
+.benifitDetils p{
+    font-size:18px;
+    padding:15px 0;
+    color:#605dba;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.benifitDetils h1{
+    font-size:2.3rem;
+    font-weight:600;
+    line-height:1.3;
+    color:#343f52;
+}
+.benifitBoxes{
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    top:20px;
+    width:85vh;
+    left:-16px;
+}
+.benifitBoxes .benifitBox{
+    position: relative;
+    display:flex;
+    margin:12px 16px;
+}
+.benifitBox i{
+    font-size:30px;
+    padding:0 12px;
+    color: #605dba;
+}
+.benifitBox .benifitsInfo h2{
+    font-size:20px;
+    color:#343f52;
+}
+.benifitBox .benifitsInfo p{
+    font-size:18px;
+    font-weight:500;
+    line-height:1.5;
+    color:#575757;
+    text-transform: lowercase;
+}
+.solutionPage{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#feca8215;
+    overflow: hidden;
+}
+.solutionContent{
+    position: relative;
+    top:60px;
+    display:flex;
+    padding:0 120px;
+}
+.solutionDetils{
+    position: relative;
+}
+.solutionDetils p{
+    font-size:18px;
+    padding:15px 0;
+    color:#605dba;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.solutionDetils h1{
+    font-size:2.3rem;
+    font-weight:600;
+    line-height:1.3;
+    color:#343f52;
+}
+.solutionDetils .detilsInfo{
+    font-size:18px;
+    padding:15px 0;
+    color:#777777;
+    font-weight:500;
+    line-height:1.5;
+    position: relative;
+    top:8px;
+   text-transform: none;
+}
+.solutionDetils .rating{
+    position: relative;
+    display:flex;
+    top:20px;
+    left:-35px;
+}
+.rating .ratingBox{
+   position: relative;
+   margin:0 35px; 
+}
+.ratingBox h1{
+    font-weight:900;
+    color:rgb(59,58,58);
+}
+.ratingBox span{
+    font-size:16px;
+    font-weight:600;
+    color:#262626;
+}
+.ratingBox .Icon i{
+    padding:12px 0;
+    color:#f8bc06;
+}
+.solutionImg{
+    position: absolute;
+    top:0vh;
+    right:-25vh;
+}
+.solutionImg img{
+    width:58%;
+}
+.testimonalPage{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#feca8215;
+}
+.testimonalHead{
+    position: relative;
+    top:40px;
+    text-align:center;
+}
+.testimonalHead p{
+    font-size:16px;
+    padding:15px 0;
+    color:#605dba;
+    font-weight:600;
+}
+.testimonalHead h1{
+    font-size:2.3rem;
+    font-weight:600;
+    line-height:1.3;
+    color:#343f52;
+}
+.testimonalContent{
+    position: relative;
+    left:25vh;
+    top:13vh;
+    width:1100px;
+    height:300px;
+}
+.testimonalBoxes{
+    position: relative;
+    display:flex;
+    width:1100px;
+    height:400px;
+}
+.testimonalBoxes .testimonalBox{
+    position: relative;
+    top:25px;
+    width:480px;
+    height:260px;
+    margin:0 16px;
+}
+.testimonalBox .testimonalIcon i{
+    color:#f8bc06;
+}
+.testimonalBox .clientText{
+    padding:12px 0;
+    font-size:18px;
+    line-height:1.5;
+    font-weight:600;
+    color: #5d5d5d;
+}
+.testimonalBox .clientsDetils{
+    position: relative;
+}
+.testimonalBox .clientsDetils h1{
+    font-size:20px;
+    padding:8px 0;
+    color:#424242;
+}
+.testimonalBox .clientsDetils p{
+    font-size:16px;
+    font-weight:600;
+    color:#5d5d5d;
+}
+.slick-dots{
+    bottom:40px;
+}
+.slick-dots li{
+    display:inline-block;
+    background-color:#989898;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+}
+.slick-dots li.slick-active{
+    background-color: #605dba;
+}
+.prizingPage{
+    position: relative;
+    width:100%;
+    height:80vh;
+    background-color:#feca8215;
+}
+.prizingContent{
+    position: relative;
+    top:40px;
+    display:flex;
+    padding:0 120px;
+}
+.prizingHead{
+    position: relative;
+    top:60px;
+}
+.prizingHead .title{
+    position: relative;
+    font-size:16px;
+    padding:15px 0;
+    color:#605dba;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.prizingHead h1{
+    font-size:2.3rem;
+    font-weight:600;
+    line-height:1.3;
+    color:#343f52;
+}
+.prizingHead p{
+    position: relative;
+    font-size:18px;
+    padding:15px 0;
+    color:#727171;
+    font-weight:500;
+    letter-spacing:1px;
+    line-height:1.5;
+}
+.prizingHead .prizingBtn{
+    position: relative;
+    top:25px;
+    font-size:16px;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    text-transform: capitalize;
+    padding:18px 35px;
+    background-color: #605dba;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition:0.5s;
+}
+.prizingHead .prizingBtn:hover{
+    letter-spacing:2px;
+}
+.prizingTaless{
+    position: absolute;
+    right:25vh;
+    display:flex;
+}
+.prizingTable{
+    position: relative;
+    width:300px;
+    height:440px;
+    background-color:#fff;
+    text-align:center;
+    margin:0 12px;
+    cursor: pointer;
+    transition:0.5s;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+}
+.prizingTaless .table2{
+    height:480px;
+    position: relative;
+    top:-20px;
+}
+.prizingTable::before{
+    position: absolute;
+    content:"";
+    left:0;
+    top:0;
+    width:100%;
+    height:16px;
+    background-color:#605dba61;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+}
+.prizingTable h1{
+    padding-top:40px;
+    font-size:45px;
+    color: #343f52;
+}
+.prizingTable h1 sup{
+    font-size:18px;
+    color: #727171;
+}
+.prizingTable h1 sub{
+    font-size:18px;
+    color: #727171;
+}
+.prizingTable h2{
+    text-transform: capitalize;
+    font-size:18px;
+    color: #343f52;
+    padding:12px 0;
+}
+.prizingTable ul li{
+   list-style:none;
+   text-align: left;
+   position: relative;
+   left:85px;
+   margin:12px 0;
+   font-size:16px;
+   color: #727171;
+   font-weight:500;
+}
+.prizingTable ul li i{
+    position: relative;
+    left:-5px;
+    font-size:14px;
+}
+.prizingTable .prizingBtn{
+    position: relative;
+    top:25px;
+    font-size:14px;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    text-transform: capitalize;
+    padding:16px 30px;
+    background-color:#605dba;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition:0.5s;
+    transform:translateY(0px);
+}
+.prizingTable .prizingBtn:hover{
+    letter-spacing:2px;
+}
+
